@@ -17,9 +17,9 @@
 
     .byline {
       position: fixed;
-      top: 1.2vh;
-      right: 1.4vw;
-      font-size: 1.1vh;
+      top: 12px;
+      right: 18px;
+      font-size: 1.4vh;
       color: #aaa;
       font-style: italic;
     }
@@ -30,7 +30,7 @@
     }
 
     header h1 {
-      font-size: 5.5vh;
+      font-size: 7vh;
       font-weight: 700;
       color: #1a1a1a;
       letter-spacing: 0.03em;
@@ -38,8 +38,8 @@
     }
 
     header p {
-      margin-top: 0.4vh;
-      font-size: 1.8vh;
+      margin-top: 0.5vh;
+      font-size: 2.4vh;
       color: #888;
     }
 
@@ -47,48 +47,51 @@
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(3, 1fr);
-      gap: 1.2vh;
+      gap: 1.5vh;
       padding: 0 1.5vw 1.5vh;
-      height: calc(100vh - 13vh);
+      height: calc(100vh - 14vh);
     }
 
     .card {
       background: #fff;
-      border-radius: 1.2vh;
+      border-radius: 1.4vh;
       box-shadow: 0 0.2vh 0.6vh rgba(0,0,0,0.09);
-      padding: 1.6vh 1.2vw 1.4vh;
+      padding: 2.8vh 1.6vw 2.4vh;
       display: flex;
       flex-direction: column;
+      justify-content: flex-start;
       transition: box-shadow 0.15s;
     }
 
     .card:hover { box-shadow: 0 0.5vh 1.6vh rgba(0,0,0,0.13); }
 
     .card h2 {
-      font-size: 2.6vh;
+      font-size: 4.2vh;
       font-weight: 700;
-      margin-bottom: 1.4vh;
-      padding-bottom: 1vh;
-      border-bottom: 0.3vh solid #eee;
+      margin-bottom: 2.4vh;
+      padding-bottom: 1.6vh;
+      border-bottom: 0.35vh solid #eee;
       color: #1a1a1a;
+      line-height: 1.1;
     }
 
     .links {
       display: flex;
       flex-direction: column;
-      gap: 0.8vh;
+      gap: 1.2vh;
       flex: 1;
+      justify-content: center;
     }
 
     .links a {
       display: flex;
       align-items: center;
-      gap: 0.6vw;
-      padding: 1.1vh 1vw;
-      border-radius: 0.8vh;
+      gap: 0.8vw;
+      padding: 2.4vh 1.4vw;
+      border-radius: 1vh;
       text-decoration: none;
-      font-size: 2.2vh;
-      font-weight: 500;
+      font-size: 3.4vh;
+      font-weight: 600;
       transition: background 0.12s;
     }
 
@@ -98,9 +101,11 @@
     .link-web:hover   { background: #dceedc; }
 
     .empty {
-      font-size: 1.7vh;
+      font-size: 2.6vh;
       color: #bbb;
       font-style: italic;
+      text-align: center;
+      padding: 2vh 0;
     }
   </style>
 </head>
