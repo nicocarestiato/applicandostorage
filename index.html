@@ -6,205 +6,41 @@
   <title>Applicando 2026 — Hub</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    html, body {
-      height: 100%;
-      overflow: hidden;
-      font-family: 'Segoe UI', Arial, sans-serif;
-      background: #f0f0f0;
-      color: #222;
-    }
-
-    .byline {
-      position: fixed;
-      top: 12px;
-      right: 18px;
-      font-size: 1.4vh;
-      color: #aaa;
-      font-style: italic;
-    }
-
-    header {
-      text-align: center;
-      padding: 2vh 2vw 1vh;
-    }
-
-    header h1 {
-      font-size: 7vh;
-      font-weight: 700;
-      color: #1a1a1a;
-      letter-spacing: 0.03em;
-      line-height: 1.1;
-    }
-
-    header p {
-      margin-top: 0.5vh;
-      font-size: 2.4vh;
-      color: #888;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(3, 1fr);
-      gap: 1.5vh;
-      padding: 0 1.5vw 1.5vh;
-      height: calc(100vh - 14vh);
-    }
-
-    .card {
-      background: #fff;
-      border-radius: 1.4vh;
-      box-shadow: 0 0.2vh 0.6vh rgba(0,0,0,0.09);
-      padding: 2.8vh 1.6vw 2.4vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      transition: box-shadow 0.15s;
-    }
-
-    .card:hover { box-shadow: 0 0.5vh 1.6vh rgba(0,0,0,0.13); }
-
-    .card h2 {
-      font-size: 4.2vh;
-      font-weight: 700;
-      margin-bottom: 2.4vh;
-      padding-bottom: 1.6vh;
-      border-bottom: 0.35vh solid #eee;
-      color: #1a1a1a;
-      line-height: 1.1;
-    }
-
-    .links {
-      display: flex;
-      flex-direction: column;
-      gap: 1.2vh;
-      flex: 1;
-      justify-content: center;
-    }
-
-    .links a {
-      display: flex;
-      align-items: center;
-      gap: 0.8vw;
-      padding: 2.4vh 1.4vw;
-      border-radius: 1vh;
-      text-decoration: none;
-      font-size: 3.4vh;
-      font-weight: 600;
-      transition: background 0.12s;
-    }
-
-    .link-canva       { background: #f0f0ff; color: #4a4a9f; }
+    html, body { height: 100%; overflow: hidden; font-family: 'Segoe UI', Arial, sans-serif; background: #f0f0f0; color: #222; }
+    .byline { position: fixed; top: 12px; right: 18px; font-size: 0.75rem; color: #aaa; font-style: italic; }
+    header { text-align: center; padding: 18px 24px 12px; }
+    header h1 { font-size: 2.4rem; font-weight: 700; color: #1a1a1a; letter-spacing: 0.03em; }
+    header p { margin-top: 3px; font-size: 0.85rem; color: #888; }
+    .grid { display: grid; grid-template-columns: repeat(4, 1fr); grid-template-rows: repeat(3, 1fr); gap: 12px; padding: 0 20px 20px; height: calc(100vh - 90px); }
+    .card { background: #fff; border-radius: 10px; box-shadow: 0 1px 4px rgba(0,0,0,0.09); padding: 14px 14px 12px; display: flex; flex-direction: column; transition: box-shadow 0.15s; }
+    .card:hover { box-shadow: 0 3px 12px rgba(0,0,0,0.13); }
+    .card h2 { font-size: 1.2rem; font-weight: 700; margin-bottom: 10px; padding-bottom: 8px; border-bottom: 2px solid #eee; color: #1a1a1a; }
+    .links { display: flex; flex-direction: column; gap: 6px; flex: 1; }
+    .links a { display: flex; align-items: center; gap: 7px; padding: 7px 10px; border-radius: 6px; text-decoration: none; font-size: 1rem; font-weight: 500; transition: background 0.12s; }
+    .link-canva { background: #f0f0ff; color: #4a4a9f; }
     .link-canva:hover { background: #e0e0ff; }
-    .link-web         { background: #f0f7f0; color: #2e6e2e; }
-    .link-web:hover   { background: #dceedc; }
-
-    .empty {
-      font-size: 2.6vh;
-      color: #bbb;
-      font-style: italic;
-      text-align: center;
-      padding: 2vh 0;
-    }
+    .link-web { background: #f0f7f0; color: #2e6e2e; }
+    .link-web:hover { background: #dceedc; }
+    .link-offline { margin-top: auto !important; background: #f5f5f5 !important; color: #888 !important; font-size: 0.8rem !important; padding: 5px 10px !important; border-top: 1px solid #eee; padding-top: 8px !important; }
+    .link-offline:hover { background: #ebebeb !important; color: #555 !important; }
   </style>
 </head>
 <body>
-
 <div class="byline">by Nicolò Carestiato</div>
-
-<header>
-  <h1>Applicando 2026</h1>
-  <p>Hub materiali per classe</p>
-</header>
-
+<header><h1>Applicando 2026</h1><p>Hub materiali per classe</p></header>
 <div class="grid">
-
-  <div class="card">
-    <h2>Classe 1AA</h2>
-    <div class="links">
-      <a class="link-canva" href="https://canva.link/v80cfqqv82au148" target="_blank">🎨 Presentazione</a>
-    </div>
-  </div>
-
-  <div class="card">
-    <h2>Classe 1BA</h2>
-    <div class="links">
-      <a class="link-canva" href="https://canva.link/43eko170owmzv28" target="_blank">🎨 Presentazione</a>
-    </div>
-  </div>
-
-  <div class="card">
-    <h2>Classe 2AA</h2>
-    <div class="links">
-      <a class="link-web" href="https://luffybebo14-ops.github.io/Applicando/" target="_blank">🌐 Sito contenitore</a>
-    </div>
-  </div>
-
-  <div class="card">
-    <h2>Classe 2BA</h2>
-    <div class="links">
-      <a class="link-canva" href="https://canva.link/d87t675i19k3u10" target="_blank">🎨 Presentazione</a>
-    </div>
-  </div>
-
-  <div class="card">
-    <h2>Classe 2CA</h2>
-    <div class="links">
-      <a class="link-canva" href="https://canva.link/9alhjyc87e9dmte" target="_blank">🎨 Presentazione</a>
-    </div>
-  </div>
-
-  <div class="card">
-    <h2>Classe 3AA</h2>
-    <div class="links">
-      <a class="link-canva" href="https://canva.link/x5zv9nbor2frt6h" target="_blank">🎨 Presentazione</a>
-    </div>
-  </div>
-
-  <div class="card">
-    <h2>Classe 3BA</h2>
-    <div class="links">
-      <a class="link-canva" href="https://canva.link/cv0m5bsuj6f2kxs" target="_blank">🎨 Presentazione</a>
-    </div>
-  </div>
-
-  <div class="card">
-    <h2>Classe 4AA</h2>
-    <div class="links">
-      <a class="link-canva" href="https://canva.link/7zcmt53xhi4tzwu" target="_blank">🎨 Presentazione</a>
-    </div>
-  </div>
-
-  <div class="card">
-    <h2>Classe 4BA</h2>
-    <div class="links">
-      <a class="link-canva" href="https://canva.link/vfi907c9b811lpf" target="_blank">🎨 Presentazione</a>
-    </div>
-  </div>
-
-  <div class="card">
-    <h2>Classe 4EA</h2>
-    <div class="links">
-      <a class="link-canva" href="https://canva.link/az9l5mnqt66y95x" target="_blank">🎨 Presentazione</a>
-    </div>
-  </div>
-
-  <div class="card">
-    <h2>Classe 5AA</h2>
-    <div class="links">
-      <a class="link-canva" href="https://canva.link/rlx36w6xhxixmer" target="_blank">🎨 Presentazione</a>
-    </div>
-  </div>
-
-  <div class="card">
-    <h2>Classe 5BA</h2>
-    <div class="links">
-      <a class="link-web" href="https://busasofia.altervista.org/Sito5BA/Sito%204ba/Home.html" target="_blank">🌐 Sito contenitore</a>
-    </div>
-  </div>
-
+  <div class="card"><h2>Classe 1AA</h2><div class="links"><a class="link-canva" href="https://canva.link/v80cfqqv82au148" target="_blank">🎨 Presentazione</a><a class="link-offline" href="./1AA/">📁 File offline</a></div></div>
+  <div class="card"><h2>Classe 1BA</h2><div class="links"><a class="link-canva" href="https://canva.link/43eko170owmzv28" target="_blank">🎨 Presentazione</a><a class="link-offline" href="./1BA/">📁 File offline</a></div></div>
+  <div class="card"><h2>Classe 2AA</h2><div class="links"><a class="link-web" href="https://luffybebo14-ops.github.io/Applicando/" target="_blank">🌐 Sito contenitore</a><a class="link-offline" href="./2AA/">📁 File offline</a></div></div>
+  <div class="card"><h2>Classe 2BA</h2><div class="links"><a class="link-canva" href="https://canva.link/d87t675i19k3u10" target="_blank">🎨 Presentazione</a><a class="link-offline" href="./2BA/">📁 File offline</a></div></div>
+  <div class="card"><h2>Classe 2CA</h2><div class="links"><a class="link-canva" href="https://canva.link/9alhjyc87e9dmte" target="_blank">🎨 Presentazione</a><a class="link-offline" href="./2CA/">📁 File offline</a></div></div>
+  <div class="card"><h2>Classe 3AA</h2><div class="links"><a class="link-canva" href="https://canva.link/x5zv9nbor2frt6h" target="_blank">🎨 Presentazione</a><a class="link-offline" href="./3AA/">📁 File offline</a></div></div>
+  <div class="card"><h2>Classe 3BA</h2><div class="links"><a class="link-canva" href="https://canva.link/cv0m5bsuj6f2kxs" target="_blank">🎨 Presentazione</a><a class="link-offline" href="./3BA/">📁 File offline</a></div></div>
+  <div class="card"><h2>Classe 4AA</h2><div class="links"><a class="link-canva" href="https://canva.link/7zcmt53xhi4tzwu" target="_blank">🎨 Presentazione</a><a class="link-offline" href="./4AA/">📁 File offline</a></div></div>
+  <div class="card"><h2>Classe 4BA</h2><div class="links"><a class="link-canva" href="https://canva.link/vfi907c9b811lpf" target="_blank">🎨 Presentazione</a><a class="link-offline" href="./4BA/">📁 File offline</a></div></div>
+  <div class="card"><h2>Classe 4EA</h2><div class="links"><a class="link-canva" href="https://canva.link/az9l5mnqt66y95x" target="_blank">🎨 Presentazione</a><a class="link-offline" href="./4EA/">📁 File offline</a></div></div>
+  <div class="card"><h2>Classe 5AA</h2><div class="links"><a class="link-canva" href="https://canva.link/rlx36w6xhxixmer" target="_blank">🎨 Presentazione</a><a class="link-offline" href="./5AA/">📁 File offline</a></div></div>
+  <div class="card"><h2>Classe 5BA</h2><div class="links"><a class="link-web" href="https://busasofia.altervista.org/Sito5BA/Sito%204ba/Home.html" target="_blank">🌐 Sito contenitore</a><a class="link-offline" href="./5BA/">📁 File offline</a></div></div>
 </div>
-
 </body>
 </html>
