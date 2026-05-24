@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classe 5AA — File offline | Applicando 2026</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { min-height: 100vh; font-family: 'Segoe UI', Arial, sans-serif; background: #f0f0f0; color: #222; }
+    .back-btn { display: inline-flex; align-items: center; gap: 6px; margin: 20px 24px 0; padding: 8px 16px; background: #fff; border-radius: 8px; text-decoration: none; font-size: 0.85rem; font-weight: 500; color: #555; box-shadow: 0 1px 4px rgba(0,0,0,0.09); transition: box-shadow 0.15s; }
+    .back-btn:hover { box-shadow: 0 3px 10px rgba(0,0,0,0.13); color: #222; }
+    header { text-align: center; padding: 20px 24px 16px; }
+    header h1 { font-size: 2rem; font-weight: 700; color: #1a1a1a; }
+    header p { margin-top: 4px; font-size: 0.85rem; color: #888; }
+    .container { max-width: 900px; margin: 0 auto; padding: 0 24px 40px; }
+    .files-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 14px; }
+    .file-btn { background: #fff; border-radius: 10px; box-shadow: 0 1px 4px rgba(0,0,0,0.09); padding: 18px 14px; display: flex; flex-direction: column; align-items: center; gap: 10px; text-decoration: none; transition: box-shadow 0.15s, transform 0.12s; }
+    .file-btn:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.14); transform: translateY(-2px); }
+    .file-icon { font-size: 2.4rem; line-height: 1; }
+    .file-name { font-size: 0.82rem; font-weight: 600; color: #333; text-align: center; line-height: 1.3; }
+    .file-type { font-size: 0.72rem; color: #aaa; font-weight: 400; margin-top: 2px; }
+    .pdf  { border-top: 3px solid #e74c3c; }
+    .video { border-top: 3px solid #2c3e50; }
+  </style>
+</head>
+<body>
+  <a class="back-btn" href="../">← Torna all'hub</a>
+  <header>
+    <h1>Classe 5AA</h1>
+    <p>File disponibili offline</p>
+  </header>
+  <div class="container">
+    <div class="files-grid">
+      <a class="file-btn pdf" href="../5 AA/1EBOOK_CASADELLAMERICANO5AA.pdf" target="_blank">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Casa dell'Americano</span>
+        <span class="file-type">PDF</span>
+      </a>
+      <a class="file-btn pdf" href="../5 AA/2EBOOK_FASTFASHION.pdf" target="_blank">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Fast Fashion</span>
+        <span class="file-type">PDF</span>
+      </a>
+      <a class="file-btn video" href="../5 AA/3VIDEO_INFN.mp4" target="_blank">
+        <span class="file-icon">🎬</span>
+        <span class="file-name">INFN</span>
+        <span class="file-type">Video</span>
+      </a>
+      <a class="file-btn pdf" href="../5 AA/4EBOOK_AI.pdf" target="_blank">
+        <span class="file-icon">📄</span>
+        <span class="file-name">AI — Ebook</span>
+        <span class="file-type">PDF</span>
+      </a>
+      <a class="file-btn video" href="../5 AA/4.2VIDEO_AI.mp4" target="_blank">
+        <span class="file-icon">🎬</span>
+        <span class="file-name">AI — Video</span>
+        <span class="file-type">Video</span>
+      </a>
+      <a class="file-btn pdf" href="../5 AA/5EBOOK_STAGEESTIVOUNIPD.pdf" target="_blank">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Stage Estivo UniPD</span>
+        <span class="file-type">PDF</span>
+      </a>
+      <a class="file-btn pdf" href="../5 AA/6EBOOK_PROSPETTIVA.pdf" target="_blank">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Prospettiva</span>
+        <span class="file-type">PDF</span>
+      </a>
+      <a class="file-btn pdf" href="../5 AA/8PPT_EQUILIBRIO DELLA SPINTA.pdf" target="_blank">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Equilibrio della Spinta</span>
+        <span class="file-type">PDF</span>
+      </a>
+      <a class="file-btn video" href="../5 AA/9VIDEO_TEMPUSFUGIT.mp4" target="_blank">
+        <span class="file-icon">🎬</span>
+        <span class="file-name">Tempus Fugit</span>
+        <span class="file-type">Video</span>
+      </a>
+      <a class="file-btn video" href="../5 AA/10VIDEO_ENIGMA.mp4" target="_blank">
+        <span class="file-icon">🎬</span>
+        <span class="file-name">Enigma</span>
+        <span class="file-type">Video</span>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
